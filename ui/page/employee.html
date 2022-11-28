@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout/employee.css">
+    <!-- <link rel="stylesheet" href="../css/layout/style.css"> -->
+    <link rel="stylesheet" href="../css/base/common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="header">
+                    <div class="combobox-head">
+                        <select class="combobox">
+                            <option value="1">Nhà hàng Biển Đông</option>
+                            <option value="2">Nhà hàng Tây Á</option>
+                            <option value="3">Nhà hàng Việt Bắc</option>
+                            <option value="4">Chưa khai báo</option>
+                        </select>
+                    </div>
+                    <div class="header-row2">
+                        <div class="header-icon icon-avartar"></div>
+                        <div class="header-content">Tạ Quang Huy</div>
+                        <div class=" icon-option"></div>
+                    </div>
+                    
+                </div>
+        
+        <div class="menu" id="menuNav">
+            <div class="menu-head">
+                <div class="menu-item__icon icon-toggle"></div>
+                <div class="menu-item__icon icon-cukcuk"></div>
+
+            </div>
+            <div class="menu-item">
+                <div class="menu-item__icon icon-overview"></div>
+                <dib class="menu-item__text">Tổng quan</dib>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item__icon icon-report"></div>
+                <dib class="menu-item__text">Báo cáo</dib>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item__icon icon-purchase"></div>
+                <dib class="menu-item__text">Mua hàng</dib>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item__icon icon-employee"></div>
+                <dib class="menu-item__text">Danh mục nhân viên</dib>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item__icon icon-setting"></div>
+                <dib class="menu-item__text">Thiết lập hệ thống</dib>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-container1">
+                <div class="content-item1">Danh sách nhân viên</div>
+                <div>
+                    <button id="btnAdd" class="content-item2 ms-1 ms-btn ms-btn-icon">Thêm nhân viên</button>
+                </div>
+            </div>
+            <div class="content-container2">
+                <div class="input-container">
+                    <div>
+                        <input id="btnSearch" type="text" class="icon-sear ms-input" placeholder="Tìm kiếm theo mã, tên hoặc số đt">
+                    </div>
+                    <div>
+                        <select class="combobox1">
+                            <option value="1">Tất cả phòng ban</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">Chưa khai báo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="combobox2">
+                            <option value="1">Tất cả vị trí</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">Chưa khai báo</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn icon-del"></button>
+                    <button class="btn icon-add"></button>
+                    <button class="btn icon-refer"></button>
+                </div>
+                
+            </div>
+            
+            <div class="content-container3">
+                <table class="tb" id="tbEmployee" border="0">
+                    <thead>
+                        <tr>
+                            <th propValue="Sort" format="stt" class="content-text__center">STT</th>
+                            <th propValue="EmployeeCode" class="content-text__left">Mã nhân viên</th>
+                            <th propValue="EmployeeName" class="content-text__left">Họ và tên</th>
+                            <th propValue="Gender" format="gender" class="content-text__left">Giới tính</th>
+                            <th propValue="IdentityNumber" class="content-text__left">Chứng minh nhân dân</th>
+                            <th propValue="DateOfBirth" format="date" class="content-text__left">Ngày sinh</th>
+                            <th propValue="PhoneNumber" class="content-text__left">Điện thoại</th>
+                            <th propValue="Email" class="content-text__left">Email</th>
+                            <th propValue="PositionName" class="content-text__left">Chức vụ</th>
+                            <th propValue="DepartmentName" class="content-text__left">Phòng ban</th>
+                            <th propValue="Salary" format="money" class="content-text__left">Mức lương cơ bản</th>
+                            <th propValue="WorkStatus" format="workStatus" class="content-text__left">Tình trạng công việc</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTbody">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-container4">
+                <div >Hiển thị 1-10/100 nhân viên</div>
+                <div class="navigate--input">
+                    <button class="icon icon-display1 icon-firstPage"></button>
+                    <button class="icon icon-display1 icon-prevPage"></button>
+                    <button class="icon icon-display2">1</button>
+                    <button class="icon icon-display2">2</button>
+                    <button class="icon icon-display2">3 </button>
+                    <button class="icon icon-display2">4</button>
+                    <button class="icon icon-display1 icon-nextPage"></button>
+                    <button class="icon icon-display1 icon-lastPage"></button>
+                </div>
+                <div>10 nhân viên trên trang</div>
+            </div>
+        </div> 
+
+        <div  class="dlgEmployeeDetail" id="dlgEmployeeDetail" hidden>
+            <div class="dialog">
+                <div class="dialog__content">
+                    <div class="dialog__button--close"></div>
+                    <div class="title">Thông tin nhân viên</div>
+                    <div class="dialog__body">
+                        <div class="dialog__body-item1">
+                            <div class="dialog__icon dialog__icon--avar"></div>
+                            <div class="dialog-text">(Vui lòng chọn ảnh có định dạng</div>
+                            <div class="dialog-text">.jpg, .jpeg, .png, .gif)</div>
+                        </div>
+                        <div class="dialog__body-item2">
+                            <div class="row1 title2">A. THÔNG TIN CHUNG:</div>
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label>Mã nhân viên (<span class="input--required">*</span>)</label>
+                                    <input huy propValue="EmployeeCode" class="ms-input1" id="txtEmployeeCode" required name-property="Mã nhân viên" type="text" >
+                                </div>
+                                <div class="m-col">
+                                    <label>Họ và tên(<span class="input--required">*</span>)</label>
+                                    <input huy propValue="EmployeeName" class="ms-input1" id="txtFullName" required name-property="Họ và tên" type="text">
+                                </div>         
+                            </div>
+
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label>Ngày sinh</label>
+                                    <input   propValue="DateOfBirth" class="ms-input1" id="" required name-property="Mã nhân viên" type="date">
+                                </div>
+                                <div class="m-col">
+                                    <label>Giới tính</label>
+                                    <select propValue="Gender" class="ms-input1" name="" id="cbxGender">
+                                        <option value="0">Nam</option>
+                                        <option value="1">Nữ</option>
+                                        <option value="2">Khác</option>
+                                    </select>
+                                </div>         
+                            </div>
+
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label>Số CMNTND/ Căn cước (<span class="input--required">*</span>)</label>
+                                    <input huy class="ms-input1" type="phoneNumber">
+                                </div>
+                                <div class="m-col">
+                                    <label>Ngày cấp</label>
+                                    <input class="ms-input1" type="date">
+                                </div>         
+                            </div>
+
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label>Nơi cấp</label>
+                                    <input class="ms-input1" type="text">
+                                </div>       
+                            </div>
+
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label>Email (<span class="input--required">*</span>)</label>
+                                    <input propValue="Email" huy class="ms-input1" id="" type="email" >
+                                </div>
+                                <div class="m-col">
+                                    <label>Số điện thoại(<span class="input--required">*</span>)</label>
+                                    <input propValue="PhoneNumber" huy class="ms-input1" type="phoneNumber">
+                                </div>         
+                            </div>
+
+                            <div class="row1 title2">B. THÔNG TIN CÔNG VIỆC:</div>
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label>Chức vụ</label>
+                                    <input propValue="PositionName" class="ms-input1" id="" type="text">
+                                </div>
+                                <div class="m-col">
+                                    <label>Phòng ban</label>
+                                    <input propValue="DepartmentName" class="ms-input1" id="" type="text">
+                                </div>         
+                            </div>
+
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label>Mã số thuế cá nhân</label>
+                                    <input class="ms-input1" type="text">
+                                </div>
+                                <div class="m-col">
+                                    <label>Mức lương cơ bản</label>
+                                    <input propValue="Salary" class="ms-input1" type="text">
+                                </div>         
+                            </div>
+
+                            <div class="m-row">
+                                <div class="m-col">
+                                    <label >Ngày gia nhập công ty</label>
+                                    <input class="ms-input1" id="" type="date">
+                                </div>
+                                <div class="m-col">
+                                    <label>Tình trạng công việc</label>
+                                    <select propValue="WorkStatus" class="ms-input1" name="" id="cbxWorkStatus">
+                                        <option value="0">Nghỉ việc</option>
+                                        <option value="1">Đang làm việc</option>
+                                        <option value="2">Thử việc</option>
+                                    </select>
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog__body-item3">
+                        <div>
+                            <button id="btnSave" class="ms-btn1 ms-btn-icon1">Lưu</button>
+                        </div>
+                        <div>
+                            <button id="btnCancel" class="ms-btn2">Huỷ</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- nhúng các thư viện -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+
+    <!-- nhúng các js dùng chung -->
+
+
+    <!-- nhúng các js dùng riêng cho trang -->
+    <script src="/js/page/employee.js"></script>
+
+</body>
+
+</html>

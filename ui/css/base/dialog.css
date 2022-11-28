@@ -1,0 +1,118 @@
+.dialog{
+    position: fixed;
+    width: 600px;
+    height: 700px;
+    z-index: 1;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    right: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.dialog__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* display: block; */
+   
+}
+
+.dialog__button--close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height:  24px;
+    background-repeat: no-repeat;
+    /* background-position:center; */
+    /* background-size: contain; */
+    background-image: url(../../assets/icon/x.svg);
+}
+
+.dialog__button--close:hover{
+    background-color: red;
+}
+
+.dialog__header title{
+    
+    font-size: large;
+    text-align:  center;
+    font-weight: bolder;
+    font-family: GoogleSans-Regular;
+}
+
+.dialog__body{
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex; 
+    height: 100%;
+}
+
+.dialog__body-item1{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+
+.dialog__body-item2{
+    width: 100%;
+    
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog__icon{
+    margin-top: 10px;
+    border-radius: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+    height: 162.87px;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: contain;
+    border: 1px solid gray;
+    
+}
+
+.dialog__icon--avar{
+    background-image: url(../../assets/img/default-avatar.jpg);
+}
+
+.dialog-text{
+    text-align: center;
+}
+
+
+
+.dialog__body-item3{
+    background-color:#E9EBEE;
+    padding: 10px 0px 0px 0px ;
+    display: flex;
+    flex-direction: row-reverse;
+    /* margin-right: 10px; */
+    /* height: 100%; */
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    padding-top: 24px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-style: bold;
+    color: #000000;
+}
+
+.title2{
+    font-size: 15px;
+    font-style: bold;
+    color: #000000;
+}

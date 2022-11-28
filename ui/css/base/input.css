@@ -1,0 +1,116 @@
+.ms-input{
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #bbb;
+    outline: none;
+    padding-left: 30px;
+    width: 170px;
+
+    font-size: 11px;
+    color: #bbbbbb;
+    font-family: GoogleSans-Regular;
+
+}
+
+/* thang cha  */
+.input-container{
+    position: relative;
+    display: flex;
+}
+
+/* thang con  */
+ .icon-refresh{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../asset/icon/refresh.png);
+    background-repeat:  no-repeat;
+    background-size: 16px 16px;
+    right: 16px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.error-validate{
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4747;
+    color: #fff;
+    bottom: 102%;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 8px;
+}
+
+.arrow-down{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: calc(50% - 8px);
+    bottom: -6px;
+    background-color:#ff4747;
+    transform: rotate(45deg);
+
+}
+
+.icon-refresh:hover{
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.ms-input::placeholder{
+    font-size: 11px;
+    color: #bbb;
+}
+
+.ms-input:focus{
+    border-color: #019160;
+}
+
+.group-toast-message{
+    display: none;
+}
+
+.ms-input1{
+    height: 25px;
+    border-radius: 4px;
+    border: solid 1px #bbb;
+    outline: none;
+    padding-left: 10px;
+    width: 170px;
+
+    font-size: 11px;
+    color: black;
+    font-family: GoogleSans-Regular;
+
+}
+
+.ms-input1::placeholder{
+    font-size: 9px;
+    color: #bbb;
+}
+
+.ms-input1:focus{
+    border-color: #019160;
+}
+
+.input__error{
+    border: 1px solid #ff4747 !important;
+}
+
+.navigate--input{
+    display: flex;
+    gap: 0px 10px;
+}
+.input--navig{
+    display:inline;
+    height: 40px;
+    width: 40px;
+    /* text-align: center; */
+    
+    
+}
+

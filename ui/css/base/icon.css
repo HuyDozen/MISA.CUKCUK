@@ -1,0 +1,153 @@
+.icon{
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-repeat:  no-repeat;
+}
+
+.icon:hover{
+    background-color:#e9ebee;
+}
+
+.icon:active{
+    background-color:#019160;
+}
+
+.icon-refer{
+    background-image: url(../../asset/icon/refresh.png);
+}
+
+.icon-display1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.icon-display2{
+    border-radius: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.01px solid;
+}
+
+.icon-del{
+    background-image: url(../../assets/icon/delete.png);
+}
+
+.icon-del:active{
+    background-color:beige;
+}
+
+.icon-add:active{
+    background-color:beige;
+}
+.icon-add{
+    background-image: url(../../assets/icon/duplicate.png);
+}
+
+.icon-refer:active{
+    background-color:beige;
+}
+
+.menu-item__icon{
+    width: 24px;
+    height:  24px;
+    
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-toggle{
+    background-image: url(../../asset/img/toggle.png);  
+    
+}
+
+.icon-cukcuk{
+    background-image: url(../../asset/img/cukcuk-logo.png);
+    width: 100px;
+    height: 30px;
+    background-size: contain;
+    padding-left: 8px;
+    background-repeat: no-repeat;
+}
+
+.icon-overview{
+    background-image: url(../../asset/icon/dashboard.png);
+}
+
+.icon-report{
+    background-image: url(../../asset/icon/report.png);
+}
+
+.icon-purchase{
+    background-image: url(../../asset/icon/dashboard.png);
+}
+
+.icon-employee{
+    background-image: url(../../asset/icon/dic-employee.png);
+}
+
+.icon-setting{
+    background-image: url(../../asset/icon/setting.png);
+}
+
+.icon-avartar{
+    background-image: url(../../asset/icon/avatar-default.png);
+    background-repeat: no-repeat;
+}
+
+.icon-option{
+    background-image: url(../../asset/icon/option.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    margin-top: 7px;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.icon-sear{
+    outline: none;
+    background-image: url(../../asset/icon/search.png);
+    background-repeat: no-repeat;
+    background-size:    16px 16px;
+    background-position: 10px center;
+}
+
+.icon-error{
+    background-color: #ff4747;
+    padding-bottom: 2px;
+}
+
+.icon-warning{
+    background-color: #ffe7af;
+}
+
+.icon-success{
+    background-color: #baffe7;
+}
+
+.icon-info{
+    background-color: #d8eaff;
+}
+
+.icon-firstPage{
+    background-image: url(../../assets/icon/btn-firstpage.svg);
+}
+
+.icon-prevPage{
+    background-image: url(../../assets/icon/btn-prev-page.svg);
+}
+
+.icon-nextPage{
+    background-image: url(../../assets/icon/btn-next-page.svg);
+}
+
+.icon-lastPage{
+    background-image: url(../../assets/icon/btn-lastpage.svg);
+}

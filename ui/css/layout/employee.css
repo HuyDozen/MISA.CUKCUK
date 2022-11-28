@@ -1,0 +1,197 @@
+.container{
+    /* chia theo grid */
+    display: grid;
+    /* 100vh lấy cả cuộn chuột */
+    grid-template-columns: 200px calc(100% - 200px);
+    grid-template-rows: 45px calc(100vh - 45px);
+
+}
+
+
+.menu{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-right: 1px solid;
+    
+}
+
+.content{
+    display: flex;
+    align-items:stretch ;
+    gap: 10px;
+    flex-direction: column;
+    /* padding-right: 45px; */
+    /* flex-direction: row-reverse; */
+    padding-left: 10px;
+    /* color: #e9ebee */
+}
+
+.header{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    
+}
+
+.content-container1{
+    display: flex;
+    justify-content: space-between;
+    
+    /* height: 60px; */
+   
+}
+
+.header-icon{
+    padding-top: 10px;
+    /* padding-right: 1050px; */
+    /* margin-right: 10px; */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    
+}
+
+.header-content{
+    padding-top: 10px;
+    
+}
+
+.combobox-head{
+    height: 30px;
+    padding-top: 10px;
+}
+
+.combobox{
+    border-width: 1px;
+    border-color: #bbbbbbbb;
+    border-radius: 4px;
+    height: 20px;
+    
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    padding-bottom: 0px;
+    height: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+
+.content-item1{
+    /* align-content:flex-start; */
+    width: auto;
+    padding: 8px 0 0 0px;
+    font-size: large;
+    text-align:  center;
+    font-weight: bolder;
+    font-family: GoogleSans-Regular;
+    height: auto;
+}
+
+.input-container{
+    display: flex;
+    column-gap: 10px;
+    height: 40px 
+}
+
+.btn{
+    background-repeat:  no-repeat;
+    background-size: 16px 16px;
+    background-position: 16px center;
+    padding-left: 40px;
+    height: 44px;
+    align-items: center;
+    border: solid 1px #bbb;
+    border-radius: 4px;
+}
+
+.content-container2{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.content-container3{
+    display: flex;  
+    width: 100%;
+}
+
+.content-container4{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.combobox1{
+    padding-left: 10px;
+    /* margin-left: 10px; */
+    width: auto;
+    height: 44px;
+    outline: none;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+    font-family: GoogleSans-Regular;
+    src: url(../../asset/font/GoogleSans-Regular.otf)
+}
+
+.combobox2{
+    padding-left: 10px;
+    /* margin-left: 15px; */
+    width: auto;
+    height: 44px;
+    outline: none;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+    font-family: GoogleSans-Regular;
+    src: url(../../asset/font/GoogleSans-Regular.otf)
+}
+
+.menu-head{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.menu-item{
+    height: 44px;
+    /* 1 chiều */
+    display: flex;
+    /* căn giữa */
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+} 
+
+
+.content-text__left{
+    text-align: left;
+}
+
+.content-text__center{
+    text-align: center;
+}
+
+.content-text__right{
+    text-align: right;
+}
+
+.dlgEmployeeDetail{
+    /* visibility: hidden; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background-color: #0006;
+}
+
+.input--required{
+    color: red;
+}
